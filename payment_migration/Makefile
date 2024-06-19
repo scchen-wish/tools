@@ -4,8 +4,6 @@ all: build test
 
 build:
 	@echo "--> Building..."
-	go build -v -o bin/partition_count ./partition_count
-	go build -v -o bin/compare ./compare
 	go build -v -o bin/partitioner ./partitioner
 	@chmod 755 bin/*
 
